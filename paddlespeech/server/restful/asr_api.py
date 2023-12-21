@@ -30,7 +30,7 @@ from paddlespeech.server.utils.exception import ServerBaseException
 router = APIRouter()
 
 
-@router.get('/paddlespeech/asr/help')
+@router.get('/asr/help')
 def help():
     """help
 
@@ -53,7 +53,7 @@ def help():
 
 
 @router.post(
-    "/paddlespeech/asr", response_model=Union[ASRResponse, ErrorResponse])
+    "/asr", response_model=Union[ASRResponse, ErrorResponse])
 def asr(request_body: ASRRequest):
     """asr api 
 

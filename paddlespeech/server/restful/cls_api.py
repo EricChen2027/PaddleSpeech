@@ -30,7 +30,7 @@ from paddlespeech.server.utils.exception import ServerBaseException
 router = APIRouter()
 
 
-@router.get('/paddlespeech/cls/help')
+@router.get('/cls/help')
 def help():
     """help
 
@@ -53,7 +53,7 @@ def help():
 
 
 @router.post(
-    "/paddlespeech/cls", response_model=Union[CLSResponse, ErrorResponse])
+    "/cls", response_model=Union[CLSResponse, ErrorResponse])
 def cls(request_body: CLSRequest):
     """cls api 
 
