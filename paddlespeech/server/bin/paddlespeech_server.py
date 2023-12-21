@@ -37,7 +37,7 @@ warnings.filterwarnings("ignore")
 __all__ = ['ServerExecutor', 'ServerStatsExecutor']
 
 app = FastAPI(
-    title="PaddleSpeech Serving API", description="Api", version="0.0.1")
+    title="ASR Serving API", description="Api", version="0.0.1")
 
 app.add_middleware(
     CORSMiddleware,
